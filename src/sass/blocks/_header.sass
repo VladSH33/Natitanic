@@ -1,0 +1,27 @@
+.header
+    height: 96px
+    background: #F5F5F5
+    &__inner
+        display: flex
+        justify-content: space-between
+        nav
+            height: 100px
+            .header-menu
+                display: flex
+                align-items: center
+                height: 100%
+                gap: 40px
+                list-style-type: none
+                margin: 0
+                &__link
+                    text-decoration: none
+                    color: #141414
+                    font-size: 16px
+                    font-weight: 400
+                .button
+                    &.bordered
+                        border-radius: 24px
+                        border: 1px solid #141414
+                        padding: 13px 41px 13px 41px
+        .logo
+            margin-top: 24px // знаю, что способ корявый, но другого способа выравнить по вертикали не придумал с блочным элементом
