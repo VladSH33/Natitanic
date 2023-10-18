@@ -1,20 +1,22 @@
 .promo
     background: radial-gradient(326.34% 128.88% at 100% 100%, #F5F5F5 0%, #4B50FA 52.08%, #F5F5F5 100%)
     height: 100vh
+    padding: 90px 0
     &__inner
         display: flex
         justify-content: space-between
         position: relative
-        align-items: center
+        align-items: flex-end
         .promo__title
+            margin: 0
             width: 50%
             z-index: 2
         .promo__image
             position: absolute
-            top: 30px
+            top: -60px
             left: 490px
+            height: 120%
             z-index: 1
-            height: 90%
             width: auto
         .promo-content
             width: 35%
@@ -22,12 +24,3 @@
                 color: #000
                 font-size: 32px
                 font-weight: 400
-                .button__icon
-                    border: 1px solid #141414
-                    border-radius: 100%
-                    padding: 8px 9px
-                .button__text
-                    color: #141414
-                    text-align: center
-                    font-size: 16px
-                    font-weight: 400
