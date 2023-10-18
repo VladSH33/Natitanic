@@ -1,9 +1,34 @@
 *
     font-family: 'Roboto', sans-serif
     box-sizing: border-box
+    line-height: 1.2
+
 .container
     max-width: 1320px
     margin: 0 auto
+
+.title
+    color: #000
+    text-transform: uppercase
+    &.big
+        font-size: 155px
+        font-weight: 900
+
+
+.button
+    display: inline-flex
+    color: #fff
+    font-size: 16px
+    font-weight: 400
+    border-radius: 24px
+    &.black
+        background-color: #141414
+        padding: 12px 34px 12px 34px
+    &.transparent
+        display: flex
+        gap: 12px
+
+
 @import 'base/_variables'
 @import 'blocks/_header'
 @import 'blocks/_promo'
