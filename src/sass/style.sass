@@ -1,20 +1,76 @@
-*
+@import 'base/_variables'
+@import 'blocks/_header'
+@import 'blocks/_promo'
+@import 'blocks/_about'
+@import 'blocks/_matters'
+@import 'blocks/_room'
+@import 'blocks/_products'
+@import 'blocks/_workplace'
+@import 'blocks/_hah'
+body
     font-family: 'Roboto', sans-serif
-    box-sizing: border-box
     line-height: 1.2
 
+*
+    box-sizing: border-box
+    
 .container
     max-width: 1320px
     margin: 0 auto
-
+.container-inner
+    padding: 0 7%
+.columns-wrapper
+    display: flex
+    flex-wrap: nowrap
+    gap: 5%
+    &.gap-2
+        gap: 2%
+    .column
+        position: relative
+        width: 50%
+    .column-40
+        width: 40%
+    .column-60
+        width: 60%
 .title
+    font-size: 83px
+    font-weight: 900
     color: #000
     text-transform: uppercase
     &.big
         font-size: 155px
-        font-weight: 900
-
-
+    &.small
+        font-size: 48px
+        font-weight: 400
+        text-transform: none
+    &.white
+        color: #fff
+        font-size: 64px
+        text-transform: none
+        font-weight: 700
+    &.title-card
+        font-size: 31px
+        font-weight: 400
+        text-transform: none
+.text
+    color: #000
+    &.large
+        font-size: 32px
+    &.middle
+        font-size: 20px
+        &.black
+            color: $second-color
+        &.white
+            color: #fff
+    &.small
+        font-size: 16px
+    &.author-text
+        font-size: 12px
+        font-weight: 700
+        letter-spacing: 1px
+        text-transform: uppercase
+        span
+            font-weight: 400
 .button
     display: inline-flex
     color: #fff
@@ -22,16 +78,20 @@
     font-weight: 400
     border-radius: 24px
     &.black
-        background-color: #141414
+        background-color: $second-color
         padding: 12px 34px 12px 34px
         margin: 40px 0 24px 0
+    &.blue
+        background-color: $main-color
+        padding: 12px 34px 12px 34px
+        margin-top: 20px
     &.transparent
         display: flex
         gap: 12px
-        color: #141414
+        color: $second-color
         text-decoration: none
         .button__icon
-            border: 1px solid #141414
+            border: 1px solid $second-color
             border-radius: 100%
             padding: 8px 9px
         .button__text
@@ -40,7 +100,18 @@
             font-weight: 400
             border-bottom: 1px solid black
             padding-bottom: 5px
-
-@import 'base/_variables'
-@import 'blocks/_header'
-@import 'blocks/_promo'
+    &.bordered
+        border: 1px solid
+        border-radius: 24px
+.card
+    padding: 24px 31px 32px 25px
+    border: 3px solid #000
+    min-height: 386px
+    &.blue
+        background: #A4C3D8
+    &.yellow
+        background: #D9A603
+    &.pink
+        background: #FFB480
+    &.green
+        background: #B3B97D
