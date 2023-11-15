@@ -1,8 +1,9 @@
 .footer
     background: #4B50FA
-    padding: 120px 0 27px
+    padding: 120px 10px 27px
     min-height: 694px
     .email-input-container
+        margin-top: 40px
         position: relative
         width: 400px
         .email-input
@@ -11,21 +12,25 @@
             border: none
             border-bottom: 2px solid #fff
             background: transparent
-        .email-submit-button
+            color: #fff
+        .email-input::placeholder
+            color: rgba(255, 255, 255, 0.30)
+            font-size: 14px
+        .email-input:focus
+            border: none
+            background-color: none
+        .email-submit-icon
             position: absolute
             right: 0
             top: 0
-            padding: 10px
-            background-color: #000 /* Цвет фона кнопки */
-            color: #fff /* Цвет текста кнопки */
             border: none
+            padding: 10px 2px 0
     .social-icons
             display: flex
             gap: 24px
     .under-footer
         display: flex
         position: relative
-        
         .pohui-menu
             display: flex
             gap: 15px
@@ -37,4 +42,8 @@
                 margin: 0
         .ptica-ebanuy
             position: absolute
-            right: 400px
+            right: 350px
+    .first-menu
+        margin-left: 50px
+    .footer-menu
+        width: 150px

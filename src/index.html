@@ -15,14 +15,14 @@
             <div class="header__inner">
                 <nav>
                     <ul class="header-menu">
-                        <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">Shop</a>
+                        <li class="header-menu item">
+                            <a href="#" class="header-menu link black">Shop</a>
                         </li>
-                        <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">Industry</a>
+                        <li class="header-menu item">
+                            <a href="#" class="header-menu link black">Industry</a>
                         </li>
-                        <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">Resources</a>
+                        <li class="header-menu item">
+                            <a href="#" class="header-menu link black">Resources</a>
                         </li>
                     </ul>
                 </nav>
@@ -32,14 +32,14 @@
 
                 <nav>
                     <ul class="header-menu">
-                        <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">Login</a>
+                        <li class="header-menu item">
+                            <a href="#" class="header-menu link black">Login</a>
                         </li>
-                        <li class="header-menu__item">
-                            <div class="header-menu__button button bordered">Schedule a Demo</div>
+                        <li class="header-menu item">
+                            <button class="button bordered button-hover">Schedule a Demo</button> <!-- тут был header-menu__button. Зачем? -->
                         </li>
-                        <li class="header-menu__item">
-                            <div class="header-menu__button button square transparent">
+                        <li class="header-menu item">
+                            <div class="button square transparent">
                                 <img src="icons/basket.svg" alt="basket" class="basket__image">
                             </div>
                         </li>
@@ -77,7 +77,7 @@
                 <img src="img/black_girl_bg.jpg" alt="black_girl" class="about__image">
             </div>
             <div class="container-inner columns-wrapper">
-                <div class="column column-40">
+                <div class="column">
                     <h2 class="title">
                         SEE IT ALL
                     </h2>
@@ -97,38 +97,42 @@
 
     <section class="matters">
         <div class="container">
-            <div class="columns-wrapper">
-                <div class="column column-40 matters-content-column">
-                    <h2 class="title">
-                        FOCUS ON WHAT MATTERS
-                    </h2>
-                    <div class="text large">
-                        with automatic zoom that responds to who's speaking.
+            <div class="container-inner">
+                <div class="columns-wrapper">
+                    <div class="column column-40 matters-content-column">
+                        <h2 class="title">
+                            FOCUS ON WHAT MATTERS
+                        </h2>
+                        <div class="text large">
+                            with automatic zoom that responds to who's speaking.
+                        </div>
+                        <div class="button filled blue">
+                            Shop Meeting Owl Pro
+                        </div>
                     </div>
-                    <div class="button filled blue">
-                        Shop Meeting Owl Pro
+                    <div class="column column-60 matters-image-column">
+                        <img src="img/card_men.jpg" alt="curly-men" class="curly-men">
+                        <img src="img/card_women.jpg" alt="black-women" class="black-women">
                     </div>
-                </div>
-                <div class="column column-60 matters-image-column">
-                    <img src="img/card_men.jpg" alt="curly-men" class="curly-men">
-                    <img src="img/card_women.jpg" alt="black-women" class="black-women">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="room">
-        <div class="container-inner">
-            <div class="columns-wrapper">
-                <div class="column-60">
-                    <h2 class="title">
-                        Connect Your Entire Room
-                    </h2>
-                    <div class="text large">
-                        with single-tap start and in-room controls.
-                    </div>
-                    <div class="button filled blue">
-                        Shop Meeting HQ
+        <div class="container">
+            <div class="container-inner">
+                <div class="columns-wrapper">
+                    <div class="column column-60">
+                        <h2 class="title">
+                            Connect Your Entire Room
+                        </h2>
+                        <div class="text large">
+                            with single-tap start and in-room controls.
+                        </div>
+                        <div class="button filled blue">
+                            Shop Meeting HQ
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,101 +141,105 @@
 
     <section class="products">
         <div class="container">
-            <div class="columns-wrapper">
-                <div class="column column-40 products-content-column">
-                    <h2 class="title white">
-                        Incredible collaboration is just ahead
-                    </h2>
-                    <div class="text middle white">
-                        Find the ideal Meeting Owl and room solutions for your organization.
+            <div class="container-inner">
+                <div class="columns-wrapper">
+                    <div class="column column-40 products-content-column">
+                        <h2 class="title white">
+                            Incredible collaboration is just ahead
+                        </h2>
+                        <div class="text middle white">
+                            Find the ideal Meeting Owl and room solutions for your organization.
+                        </div>
+                        <div class="button bordered white">
+                            Shop All Products
+                        </div>
                     </div>
-                    <div class="button bordered white">
-                        Shop All Products
+                    <div class="column">
+                        <img src="img/card_people.jpg" alt="people" class="people">
                     </div>
-                </div>
-                <div class="column">
-                    <img src="img/card_people.jpg" alt="people" class="people">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="workplace">
-        <div class="container-inner">
-            <h2 class="title small">
-                Create new possibility in every kind of workplace
-            </h2>
-            <div class="columns-wrapper gap-2">
-                <div class="column">
-                    <div class="card blue">
-                        <h2 class="title title-card">
-                            Business
-                        </h2>
-                        <div class="text middle black">
-                            We help remote employees participate more fully
+        <div class="container">
+            <div class="container-inner">
+                <h2 class="title small">
+                    Create new possibility in every kind of workplace
+                </h2>
+                <div class="columns-wrapper gap-2 wrap">
+                    <div class="column column-20">
+                        <div class="card blue">
+                            <h2 class="title title-card">
+                                Business
+                            </h2>
+                            <div class="text middle black">
+                                We help remote employees participate more fully
+                            </div>
+                            <img src="icons/arrow.svg" alt="arrow" class="arrow-card-icon">
                         </div>
-                        <img src="icons/arrow.svg" alt="arrow" class="arrow-card-icon">
-                    </div>
-                    <p class="text small">
-                        As we re-explore what it means to use office space and how to collaborate as teams across large distances, our Meeting Owl devices have been a great piece of equipment to enable groups to collaborate.
-                    </p>
-                    <div class="text author-text">
-                        <span>—<br></span>
-                        Noah Brunn, IS Infrastructure Manager, Arc'Teryx
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card yellow">
-                        <h2 class="title title-card">
-                            Education
-                        </h2>
-                        <div class="text middle black">
-                            We help remote students to actively engage
+                        <p class="text small">
+                            As we re-explore what it means to use office space and how to collaborate as teams across large distances, our Meeting Owl devices have been a great piece of equipment to enable groups to collaborate.
+                        </p>
+                        <div class="text author-text">
+                            <span>—<br></span>
+                            Noah Brunn, IS Infrastructure Manager, Arc'Teryx
                         </div>
-                        <img src="icons/arrow.svg" alt="arrow" class="arrow-card-icon">
                     </div>
-                    <p class="text small">
-                        We can keep [our students] engaged and a part of what’s going on in the classroom, no matter where their learning takes place.
-                    </p>
-                    <div class="text author-text">
-                        <span>—<br></span>
-                        Melissa Whelan, Dean of Student Life, Trinity Hall, EDU
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card pink">
-                        <h2 class="title title-card">
-                            Healthcare
-                        </h2>
-                        <div class="text middle black">
-                            We help hybrid care teams collaborate better
+                    <div class="column column-20">
+                        <div class="card yellow">
+                            <h2 class="title title-card">
+                                Education
+                            </h2>
+                            <div class="text middle black">
+                                We help remote students to actively engage
+                            </div>
+                            <img src="icons/arrow.svg" alt="arrow" class="arrow-card-icon">
                         </div>
-                        <img src="icons/arrow.svg" alt="arrow" class="arrow-card-icon">
-                    </div>
-                    <p class="text small">
-                        The Meeting Owl is a great system for my telehealth needs because of the integrated audio and video, and the way it tracks you.
-                    </p>
-                    <div class="text author-text">
-                        <span>—<br></span>
-                        Sierra Christensen, PT, DPT, ATC, DevelopPT
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card green">
-                        <h2 class="title title-card">
-                            Legal
-                        </h2>
-                        <div class="text middle black">
-                            We help remote legal proceedings go smoothly
+                        <p class="text small">
+                            We can keep [our students] engaged and a part of what’s going on in the classroom, no matter where their learning takes place.
+                        </p>
+                        <div class="text author-text">
+                            <span>—<br></span>
+                            Melissa Whelan, Dean of Student Life, Trinity Hall, EDU
                         </div>
-                        <img src="icons/arrow.svg" alt="arrow" class="arrow-card-icon">
                     </div>
-                    <p class="text small">
-                        At CourtCall, we try to replicate the courtroom experience as if you were standing right in front of the judge. The Meeting Owl gives us that same ability for a video participant.
-                    </p>
-                    <div class="text author-text">
-                        <span>—<br></span>
-                        Ron DaLessio, VP of Sales, CourtCall
+                    <div class="column column-20">
+                        <div class="card pink">
+                            <h2 class="title title-card">
+                                Healthcare
+                            </h2>
+                            <div class="text middle black">
+                                We help hybrid care teams collaborate better
+                            </div>
+                            <img src="icons/arrow.svg" alt="arrow" class="arrow-card-icon">
+                        </div>
+                        <p class="text small">
+                            The Meeting Owl is a great system for my telehealth needs because of the integrated audio and video, and the way it tracks you.
+                        </p>
+                        <div class="text author-text">
+                            <span>—<br></span>
+                            Sierra Christensen, PT, DPT, ATC, DevelopPT
+                        </div>
+                    </div>
+                    <div class="column column-20">
+                        <div class="card green">
+                            <h2 class="title title-card">
+                                Legal
+                            </h2>
+                            <div class="text middle black">
+                                We help remote legal proceedings go smoothly
+                            </div>
+                            <img src="icons/arrow.svg" alt="arrow" class="arrow-card-icon">
+                        </div>
+                        <p class="text small">
+                            At CourtCall, we try to replicate the courtroom experience as if you were standing right in front of the judge. The Meeting Owl gives us that same ability for a video participant.
+                        </p>
+                        <div class="text author-text">
+                            <span>—<br></span>
+                            Ron DaLessio, VP of Sales, CourtCall
+                        </div>
                     </div>
                 </div>
             </div>
@@ -255,26 +263,28 @@
     </section>
 
     <section class="article">
-        <div class="container-inner">
-            <div class="columns-wrapper">
-                <div class="column column-80">
-                    <img src="img/wfa_irl.jpg" alt="black-women" class="black__women">
-                    <div class="button bordered">
-                        View All Articles
-                    </div>
-                </div>
-                <div class="column column-20">
-                    <h3 class="title title-card font-bold white">
-                        How to run virtual events using Zoom
-                    </h3>
-                    <div class="text small white">
-                        Although the COVID-19 state regulations preventing crowds and mass gatherings remains in effect in c...
-                    </div>
-                    <div class="button invisible">
-                        <div class="read-article__text">
-                            Read Article
+        <div class="container">
+            <div class="container-inner">
+                <div class="columns-wrapper">
+                    <div class="column column-70">
+                        <img src="img/wfa_irl.jpg" alt="black-women" class="black__women">
+                        <div class="button bordered">
+                            View All Articles
                         </div>
-                        <img src="icons/arrow-white.svg" alt="arrow-white" class="arrow-card-icon">
+                    </div>
+                    <div class="column column-30">
+                        <h3 class="title title-card font-bold white">
+                            How to run virtual events using Zoom
+                        </h3>
+                        <div class="text small white">
+                            Although the COVID-19 state regulations preventing crowds and mass gatherings remains in effect in c...
+                        </div>
+                        <div class="button invisible">
+                            <div class="read-article__text">
+                                Read Article
+                            </div>
+                            <img src="icons/arrow-white.svg" alt="arrow-white" class="arrow-card-icon">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -291,28 +301,28 @@
                         </h2>
                         <div class="email-input-container">
                             <input type="email" class="email-input" placeholder="Enter your email">
-                            <button class="email-submit-button">Отправить</button>
+                            <img src="icons/arrow-white.svg" alt="arrow" class="email-submit-icon">
                         </div>
                     </div>
-                    <div class="column white">
+                    <div class="column white first-menu">
                         <div class="title title-footer-menu">
                             Company
                         </div>
                         <ul class="footer-menu">
                             <li class="footer-menu item">
-                                <a href="#" class="footer-menu link">About</a>
+                                <a href="#" class="footer-menu link white">About</a>
                             </li>
     
                             <li class="footer-menu item">
-                                <a href="#" class="footer-menu link">Press</a>
+                                <a href="#" class="footer-menu link white">Press</a>
                             </li>
     
                             <li class="footer-menu item">
-                                <a href="#" class="footer-menu link">Careers</a>
+                                <a href="#" class="footer-menu link white">Careers</a>
                             </li>
     
                             <li class="footer-menu__item">
-                                <a href="#" class="footer-menu link">Help & FAQ</a>
+                                <a href="#" class="footer-menu link white">Help & FAQ</a>
                             </li>
                         </ul>
                     </div>
@@ -322,7 +332,7 @@
                         </div>
                         <ul class="footer-menu">
                             <li class="footer-menu item">
-                                <a href="#" class="footer-menu link">Become a Reseller</a>
+                                <a href="#" class="footer-menu link white">Become a Reseller</a>
                             </li>
                         </ul>
                     </div>
@@ -341,17 +351,17 @@
     
                             <li class="footer-menu item">
                                 Sales
-                                <a href="#" class="footer-menu link">sales@owllabs.com</a>
+                                <a href="#" class="footer-menu link white">sales@owllabs.com</a>
                             </li>
     
                             <li class="footer-menu item">
                                 Support
-                                <a href="#" class="footer-menu link">Contact Us</a>
+                                <a href="#" class="footer-menu link white">Contact Us</a>
                             </li>
     
                             <li class="footer-menu item">
                                 Press
-                                <a href="#" class="footer-menu link">press@owllabs.com</a>
+                                <a href="#" class="footer-menu link white">press@owllabs.com</a>
                             </li>
                         </ul>
                     </div>
